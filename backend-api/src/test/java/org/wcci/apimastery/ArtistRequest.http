@@ -1,0 +1,29 @@
+GET http://localhost:8080/api/artists/
+###
+GET http://localhost:8080/api/artist/1/
+###
+GET http://localhost:8080/api/artist/3/
+###
+POST http://localhost:8080/api/artists/add/
+Content-type: application/json
+
+{
+  "description": "Test Description",
+  "recordLabel": "Test Record Label",
+  "imageSource": "Test Image Source",
+  "name": "Test Artist"
+}
+###
+PATCH http://localhost:8080/api/artist/1/addAlbum/
+Content-type: application/json
+
+{
+  "image": "Test Album Image",
+  "artist": "Test Artist",
+  "title": "Test Album",
+  "recordLabel": "Test Record Label"
+}
+###
+DELETE http://localhost:8080/api/artists/1/
+###
+

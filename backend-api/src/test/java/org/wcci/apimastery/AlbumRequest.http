@@ -1,0 +1,9 @@
+GET http://localhost:8080/api/albums/
+###
+GET http://localhost:8080/api/album/5/
+###
+GET http://localhost:8080/api/album/6/
+###
+DELETE http://localhost:8080/
+###
+GET http://localhost:8080/api/album/6/
